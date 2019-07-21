@@ -4,7 +4,7 @@ base url `https://app.slovakrail.sk`
 
 ## Authentification:
 
-Add header `x-api-key: PDh^2-$-M]8(dG8E+Q,FR}zsfz"Q~:N2pp\ykmg9ZEgKVrh42PHS?^sQ6<3;X,?-`. It looks that application "Ideme Vlakom" is using same api key for every user. Even when you are logged in.
+Add header `x-api-key: PDh^2-$-M]8(dG8E+Q,FR}zsfz"Q~:N2pp\ykmg9ZEgKVrh42PHS?^sQ6<3;X,?-`. It looks that application "Ideme Vlakom" is using same api key for every user. Even when you are logged in. There is no handshake when you start application and the `x-api-key` is probably hardcoded to code.
 
 ### GET `api/supported-version/{versionNumber}`
 
@@ -18,6 +18,7 @@ returns `true` for `versionNumber=1` else `false`.
 ### GET `api/v1/init`
 
 * response
+
 ```
 {
 	"ageCategories": [
